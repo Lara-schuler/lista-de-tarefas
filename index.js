@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/tarefas', async (req, res) => {
+app.get('/', async (req, res) => {
     await tarefaController.getTarefas(req, res);
   });
 app.post('/tarefa', tarefaController.addTarefa);

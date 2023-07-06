@@ -27,14 +27,14 @@ function addTarefa(req, res) {
     const { title, description } = req.body;
     const tarefa = new Tarefa(Date.now(), title, description);
     tarefa.save();
-    res.redirect('/tarefas');
+    res.redirect('/');
 }
 
 // Função para deletar tarefa
 async function deleteTarefa(req, res) {
     const { id } = req.query;
     Tarefa.delete(id);
-    res.redirect('/tarefas');
+    res.redirect('/');
 }
 
 // Função para editar tarefa
@@ -60,7 +60,7 @@ async function updateTarefa(req, res) {
   tarefa.description = description;
   Tarefa.update(id, title, description);
   
-  res.redirect('/tarefas');
+  res.redirect('/');
 }
 
 
