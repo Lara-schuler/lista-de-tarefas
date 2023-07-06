@@ -1,0 +1,38 @@
+/* style.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 25px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
