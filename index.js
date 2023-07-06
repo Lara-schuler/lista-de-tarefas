@@ -1,6 +1,8 @@
 const express = require('express');
 const ejs = require('ejs');
+require('dotenv').config();
 const tarefaController = require('./controllers/tarefaController');
+
 
 const app = express();
 const port = 3000;

@@ -2,10 +2,10 @@ const mysql = require('mysql2');
 class DbMysql {
   constructor() {
     this.connection = mysql.createConnection({
-      host: 'database-1.cv4jjgveqhno.us-east-2.rds.amazonaws.com',
-      user: 'admin',
-      password: 'pacoquinha',
-      database: 'TarefasBD'
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE
     });
 
     this.connection.connect((err) => {
